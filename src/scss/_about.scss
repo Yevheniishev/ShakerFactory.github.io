@@ -1,0 +1,131 @@
+.about {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+    }
+    &__main {
+        max-width: 560px;
+        font-size: 32px;
+        font-family: $opensans-regular;
+        color: $color-extra;
+        text-align: center; 
+        margin-bottom: 60px;  
+    }
+
+  &__center {
+      width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    overflow: hidden; 
+    &-left {
+        width: 32%;   
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start;
+    }
+        
+    &-right {
+       width: 50%;
+      overflow: hidden;
+    }
+} 
+    &__title {
+        width: 100%;
+    font-size: 25px;
+    font-family: $opensans-regular;
+    color: $color-extra;
+    margin-top: 20px; 
+    margin-bottom: 25px;
+    }
+    &__subtitle {
+        width: 100%;
+        margin-bottom: 25px;
+        font-size: 20px; 
+        line-height: 32px;
+        color: $color-neutral; 
+
+    }
+    &__img {
+        width: 100%;   
+    }
+   &__bottom {
+    width: 100%;   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden; 
+       &-left {
+         width: 50%;
+         overflow: hidden;
+       }
+       &-right {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start; 
+       }
+   }
+}
+@media (max-width: $lg) {
+    .about {
+        &__center{
+            &-right {
+                width: 65%;
+            }
+        }
+        &__bottom {
+            &-left {
+                width: 65%;      
+            }
+        }
+    }
+}
+@media (max-width: $md) {
+    .about {
+        &__main {
+            width: 100%;
+        }
+        &__center{
+           flex-direction: column;
+           margin-bottom: 40px;
+           &-left {
+               width: 100%;
+               align-items: center;
+           }
+           &-right {
+               width: 100%;
+           }
+        }
+        &__bottom {
+            flex-direction: column-reverse; 
+            &-left {
+                width: 100%;
+            }
+            &-right {
+                width: 100%;
+                align-items: center; 
+            }    
+        }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;   
+        }
+    }
+}
+@media (max-width: $sm) {
+    .about {
+        &__main {
+            font-size: 26px; 
+            margin-bottom: 40px; 
+        }
+    }
+}
+ 

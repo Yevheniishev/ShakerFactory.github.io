@@ -1,0 +1,92 @@
+ .client {
+     padding-top: 80px; 
+     padding-bottom: 60px;
+     &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+     }
+     &__title {
+         width: 100%; 
+         font-size: 36px;
+         font-family: $opensans-regular;
+         color: $color-extra;
+         margin-bottom: 65px;
+         text-align: center;  
+     }
+     &__comment {
+         width: 100%;
+         display: flex;
+         align-items: flex-start;
+         justify-content: space-between;
+     }
+     &__box {
+         width: 28.5%;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start; 
+         justify-content: center;
+     }
+     &__item {
+         width: 100%;
+         display: flex;
+         background-color: $color-bg;
+         margin-bottom: 25px;
+         padding: 41px 40px 40px 60px;
+         position: relative;
+         z-index: 1;
+         &-subtitle {
+             width: 100%; 
+             font-size: 16px;
+             font-family: $opensans-regular;
+             color: $color-white;
+             line-height: 25px;
+             position: relative;
+         }
+         &-subtitle::before {
+         content: '';
+         position: absolute;
+         top: -10px;   
+         left: -34px;  
+         width: 24px;
+         height: 20px;  
+         background-image: url('../images/quote.svg');
+         background-size: 24px 20px;
+         }
+     }
+     &__item::after {
+         content: '';
+         display: block;
+         position: absolute;
+         left: 20px;
+         bottom: 4px;
+         transform: rotate(60deg);     
+         background-color: $color-bg;
+         width: 80px;
+         height: 65px;
+         z-index: -1; 
+     }
+     &__name {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: $opensans-regular;
+        color: $color-extra; 
+     }
+     &__company {
+       font-size: 14px;
+       font-family: $opensans-regular;
+       color: $color-neutral;
+     }
+ }
+ @media (max-width: $md) {
+     .client {
+         &__comment {
+             flex-direction: column;
+         }
+         &__box {
+             width: 100%;
+             margin-bottom: 25px; 
+         }
+     }
+ }

@@ -1,0 +1,57 @@
+ .view {
+     padding: 50px 0 60px 0;
+     background-color: $color-bg;
+     &__inner {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-start; 
+     }
+     &__title {
+         max-width: 676px; 
+      color: $color-white;
+      font-size: 30px;
+      font-family: $opensans-regular;
+      text-align: center;
+      margin-bottom: 25px;
+     }
+     &__subtitle {
+    width: 100%;
+    font-family: $opensans-regular;
+    font-size: 16px;
+    color: $color-primary;
+    margin-bottom: 38px;
+    text-align: center;
+     }
+     &__btn {
+       cursor: pointer;
+       text-transform: uppercase;
+       border: none;
+       background-color: $color-btn;
+       width: 240px;
+       height: 60px;
+       font-size: 17px;
+       font-family: $opensans-semibold;
+       color: $color-granit;
+       border-radius: 5px;
+       transition: all 0.5s;
+     }
+     &__btn:hover {
+         background-color: yellow;
+         transition: all 0.5s;
+     }
+ }
+ @media (max-width: $md) {
+     .view {
+         &__title {
+             width: 100%;
+         }
+     }
+ }
+ @media (max-width: $sm) {
+     .view {
+         &__title {
+             font-size: 25px;  
+         }
+     }
+ }

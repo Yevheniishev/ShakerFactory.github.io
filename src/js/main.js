@@ -2,7 +2,8 @@ $(document).ready(function() {
     $('.header__burger').click(function () {
         $(this).toggleClass('header__burger--active');
         $('.header__nav').toggleClass('header__nav--active');
-        $('.intro').toggleClass('intro--active');
+        $('section').toggleClass('section--active');
+        $('footer').toggleClass('footer--active');
     })
  
 

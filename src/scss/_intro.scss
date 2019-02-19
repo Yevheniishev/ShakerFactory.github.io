@@ -2,12 +2,6 @@
     padding-top: 90px; 
     padding-bottom: 58px;
     background-color: $color-bg;
-    transition: all .5s;
-    transform: translateX(0%);
-    &--active {
-        transition: all .5s; 
-        transform: translateX(65%);
-    }
     &__inner {
         display: flex;
         flex-direction: column;

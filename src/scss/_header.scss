@@ -107,6 +107,10 @@
             }
         }
     }
+    .section--active {
+        transition: all .5s; 
+        transform: translateX(65%);
+} 
 }
 @media (max-width: $sm) {
     .logo {
